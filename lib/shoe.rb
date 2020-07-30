@@ -8,6 +8,7 @@ class Shoe
 
   def initialize(brand) # initializes instance of shoe class with an instance brand variable
     @brand = brand
+    BRANDS << brand
   end
 
   def brand=(brand) # getter method for brand
@@ -19,5 +20,5 @@ class Shoe
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-  
+
 end
