@@ -10,13 +10,14 @@ class Shoe
     @brand = brand
   end
 
-  def cobble
-    self.condition = "new"
-    puts "Your shoe is as good as new!"
-  end
-
   def brand=(brand) # getter method for brand
     @brand = brand # assigns input-ed brand to instance brand variable
     BRANDS << brand # shovels input-ed brand into BRANDS constant
   end
+
+  def cobble
+    self.condition = "new"
+    puts "Your shoe is as good as new!"
+  end
+  
 end
