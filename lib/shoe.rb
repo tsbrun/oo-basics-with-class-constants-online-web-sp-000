@@ -14,7 +14,7 @@ class Shoe
   end
 
   def brands=(brand)
-    BRANDS << brand unless BRANDS.include?(brand)
+    BRANDS << brand 
   end
 
 end
