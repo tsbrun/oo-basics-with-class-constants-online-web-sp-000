@@ -15,7 +15,7 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-  def brands=(brand) # getter method for brand
+  def brand=(brand) # getter method for brand
     @brand = brand # assigns input-ed brand to instance brand variable
     BRANDS << brand # shovels input-ed brand into BRANDS constant
   end
