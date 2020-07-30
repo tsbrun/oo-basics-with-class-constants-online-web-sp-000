@@ -8,7 +8,7 @@ class Shoe
 
   def initialize(brand) # initializes instance of shoe class with an instance brand variable
     @brand = brand
-    BRANDS << brand
+    BRANDS << brand unless BRANDS.include?(brand)
   end
 
   def cobble
