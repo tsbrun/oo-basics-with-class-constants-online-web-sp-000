@@ -1,3 +1,5 @@
+require 'pry'
+
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand # Shoe.brand => returns brand of shoe instance
@@ -16,6 +18,7 @@ class Shoe
   def brands=(brand) # getter method for brand
     @brand = brand # assigns input-ed brand to instance brand variable
     BRANDS << brand # shovels input-ed brand into BRANDS constant
+    binding.pry
   end
 
 end
