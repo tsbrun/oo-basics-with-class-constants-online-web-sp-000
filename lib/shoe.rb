@@ -19,5 +19,4 @@ class Shoe
     @brand = brand # assigns input-ed brand to instance brand variable
     BRANDS << brand # shovels input-ed brand into BRANDS constant
   end
-binding.pry
 end
