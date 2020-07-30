@@ -1,10 +1,10 @@
 class Shoe
   attr_accessor :color, :size, :material, :condition
-  attr_reader :brand
+  attr_reader :brand # Shoe.brand => returns brand of shoe instance
 
-  BRANDS = []
+  BRANDS = [] # keeps track of brands
 
-  def initialize(brand)
+  def initialize(brand) # initializes instance of shoe class with an instance brand variable
     @brand = brand
   end
 
@@ -13,8 +13,9 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-  def brands=(brand)
-    BRANDS << brand 
+  def brands=(brand) # getter method for brand
+    @brand = brand # assigns input-ed brand to instance brand variable
+    BRANDS << brand # shovels input-ed brand into BRANDS constant
   end
 
 end
